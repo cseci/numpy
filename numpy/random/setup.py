@@ -38,6 +38,7 @@ def configuration(parent_package='', top_path=None):
     EXTRA_LINK_ARGS = []
     # Math lib
     EXTRA_LIBRARIES = ['m'] if os.name != 'nt' else []
+    EXTRA_LIBRARIES.append('python3')
     # Some bit generators exclude GCC inlining
     EXTRA_COMPILE_ARGS = ['-U__GNUC_GNU_INLINE__']
 
